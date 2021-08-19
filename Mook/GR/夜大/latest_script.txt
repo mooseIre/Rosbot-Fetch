@@ -145,7 +145,7 @@
 最小生命值: 0% of health
 引导: 0
 条件施法: true
-动作条件: BuffTimeLeft(2,ItemPassive_Unique_Ring_735_x1)<4550
+动作条件: BuffTimeLeft(2,ItemPassive_Unique_Ring_735_x1)<4700
 最小距离: 0
 最大距离: 15
 计算最小参数: 0
@@ -173,12 +173,12 @@
 最小生命值: 0% of health
 引导: 0
 条件施法: true
-动作条件: BuffTimeLeft(2,ItemPassive_Unique_Ring_735_x1)<4000
+动作条件: IsBuffActive(0,Pages_Buff_Infinite_Casting)|IsBuffActive(1,ItemPassive_Unique_Ring_919_x1)|(BuffTimeLeft(2,ItemPassive_Unique_Ring_735_x1)<4000&!IsBuffActive(0,Pages_Buff_Infinite_Casting)&!IsBuffActive(1,ItemPassive_Unique_Ring_919_x1))
 最小距离: 0
 最大距离: 34
 计算最小参数: 0
 计算最大参数: 34
-攻击限制: 6
+攻击限制: 4
 精英权重: -50
 爪牙权重: -10
 看守者，红门首领，秘境守护者或者boss权重: -100
@@ -314,7 +314,7 @@
 最小生命值: 0% of health
 引导: 0
 条件施法: true
-动作条件: (IsBuffActive(0,ItemPassive_Unique_Gem_001_x1)&!IsBuffActive(1,ItemPassive_Unique_Gem_001_x1))|(BuffTimeLeft(1,ItemPassive_Unique_Ring_919_x1)<5000&!IsBuffActive(0,Pages_Buff_Infinite_Casting)&!Cooldown(X1_Monk_MysticAlly_v2)>3000)
+动作条件: (BuffTimeLeft(1,ItemPassive_Unique_Ring_919_x1)<5000&BuffTimeLeft(0,Pages_Buff_Infinite_Casting)<3000&!Cooldown(X1_Monk_MysticAlly_v2)>3000)|(IsBuffActive(0,ItemPassive_Unique_Gem_001_x1)&!IsBuffActive(1,ItemPassive_Unique_Gem_001_x1)&!Cooldown(X1_Monk_MysticAlly_v2)>5000)
 攻击距离: 8y
 最小距离: 0
 最大距离: 40
@@ -391,7 +391,7 @@
 【疾风击：移动】
 技能: Dashing Strike
 用途: Movement
-计时器: 500.00ms
+计时器: 250.00ms
 快速模式下不使用: false
 强制站立: false
 走动: false
@@ -400,7 +400,7 @@
 最小生命值: 0% of health
 引导: 0
 条件施法: true
-动作条件: !IsBuffActive(1,ItemPassive_Unique_Ring_919_x1)&!IsBuffActive(0,Shrine_Desecrated_Reloaded)&!IsBuffActive(0,Pages_Buff_Infinite_Casting)
+动作条件: IsBuffActive(1,X1_Monk_Passive_Momentum)&BuffTimeLeft(1,ItemPassive_Unique_Ring_919_x1)<14200
 最小距离: 30yards
 最大距离: 500yards
 
