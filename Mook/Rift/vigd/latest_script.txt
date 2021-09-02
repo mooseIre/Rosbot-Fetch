@@ -13,3 +13,232 @@
 
 
 「行为」
+
+
+【Water Ally - Trash】
+技能: Mystic Ally
+用途: Density Buff
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: false
+用来打碎物品: true
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+最小距离: 0
+最大距离: 35
+计算最小参数: 0
+计算最大参数: 35
+攻击限制: 3
+精英权重: 4
+爪牙权重: 4
+看守者，红门首领，秘境守护者或者boss权重: 4
+哥布林权重: 4
+普通怪权重: 1
+
+
+【WOTHF - Trash】
+技能: Way Of The Hundred Fists
+用途: Attack Density
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+忽略位置计算: true
+用来打碎物品: true
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+攻击距离: 45y
+最小距离: 5
+最大距离: 45
+计算最小参数: 0
+计算最大参数: 10
+攻击限制: 3
+精英权重: 4
+爪牙权重: 0
+看守者，红门首领，秘境守护者或者boss权重: 4
+哥布林权重: 4
+普通怪权重: 1
+
+
+【Dash - Approach】
+技能: Dashing Strike
+用途: Movement
+计时器: 225.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+最小距离: 4yards
+最大距离: 38yards
+
+
+【[C] Dash - Explore (Long)】
+技能: Dashing Strike
+用途: Movement
+计时器: 115.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: true
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: IsBuffActive(3, X1_Monk_DashingStrike) 
+最小距离: 29yards
+最大距离: 500yards
+
+
+【Dash - Explore (Medium)】
+技能: Dashing Strike
+用途: Movement
+计时器: 225.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: true
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+最小距离: 18yards
+最大距离: 28yards
+
+
+【[C] Dash - Channelling Pylon】
+技能: Dashing Strike
+用途: Movement
+计时器: 250.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: true
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: IsBuffActive(0, Pages_Buff_Infinite_Casting)
+最小距离: 17yards
+最大距离: 34yards
+
+
+【[C] Mantra of Conviction - Buff】
+技能: Mantra Of Conviction
+用途: Density Buff
+计时器: 2 990.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: !IsBuffActive(2, X1_Monk_MantraOfConviction_v2_Passive) | BuffTimeLeft(2, X1_Monk_MantraOfConviction_v2_Passive) < 100 & Primary() > 50%
+最小距离: 0
+最大距离: 60
+计算最小参数: 0
+计算最大参数: 60
+攻击限制: 3
+精英权重: 4
+爪牙权重: 4
+看守者，红门首领，秘境守护者或者boss权重: 4
+哥布林权重: 4
+普通怪权重: 1
+
+
+【[C] Epiphany - Buff】
+技能: Epiphany
+用途: Density Buff
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: !IsBuffActive(1, X1_Monk_Epiphany) | (IsBuffActive(1, X1_Monk_Epiphany) & BuffTimeLeft(1, X1_Monk_Epiphany) < 250) | (BuffTimeLeft(1, X1_Monk_Epiphany) > 5000 & !IsBuffActive(0, Pages_Buff_Infinite_Casting) & Primary() < 99%) | (BuffTimeLeft(1, X1_Monk_Epiphany) < 250 & IsBuffActive(0, Pages_Buff_Infinite_Casting))
+最小距离: 0
+最大距离: 70
+计算最小参数: 0
+计算最大参数: 70
+攻击限制: 5
+精英权重: 6
+爪牙权重: 6
+看守者，红门首领，秘境守护者或者boss权重: 6
+哥布林权重: 6
+普通怪权重: 1
+
+
+【Dash - Town】
+技能: Dashing Strike
+用途: Movement
+计时器: 325.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+最小距离: 21yards
+最大距离: 100yards
+
+
+【[C] Breath Of Heaven - Buff】
+技能: Breath Of Heaven
+用途: Buff
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: true
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: !IsBuffActive(2, Monk_BreathOfHeaven) & Rune(Monk_BreathOfHeaven) == 4 | Rune(Monk_BreathOfHeaven) == 4 & BuffTimeLeft(2, Monk_BreathOfHeaven) < 100 | !IsBuffActive(2, Monk_BreathOfHeaven) & Rune(Monk_BreathOfHeaven) == 2 | Rune(Monk_BreathOfHeaven) == 2 & BuffTimeLeft(2, Monk_BreathOfHeaven) < 250
+
+
+【Water Ally - Town】
+技能: Mystic Ally
+用途: Movement
+计时器: 1 000.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+最小距离: 12yards
+最大距离: 100yards
+
+
+【[C] Breath Of Heaven - Town】
+技能: Breath Of Heaven
+用途: Movement
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: true
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: IsBuffActive(0, ActorInTownBuff)
+最小距离: 18yards
+最大距离: 100yards

@@ -13,3 +13,251 @@
 
 
 「行为」
+
+
+【劲风煞】
+技能: Sweeping Wind
+用途: Buff
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: BuffTimeLeft(0,Monk_SweepingWind)<500
+
+
+【灵光雾】
+技能: Epiphany
+用途: Buff
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: true
+走动: false
+强制重新施法: false
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+
+
+【炫目闪(回能)】
+技能: Blinding Flash
+用途: Density Buff
+计时器: 500.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+最小距离: 0
+最大距离: 20
+计算最小参数: 0
+计算最大参数: 20
+攻击限制: 3
+精英权重: 1
+爪牙权重: 1
+看守者，红门首领，秘境守护者或者boss权重: 1
+哥布林权重: 1
+普通怪权重: 1
+
+
+【治愈真言】
+技能: Mantra Of Healing
+用途: Buff
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: false
+用来打碎物品: false
+能量: Primary
+能量数值按照百分比计算: 0
+最低能量水平: 45.00
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: !IsBuffActive(1,X1_Monk_MantraOfHealing_v2_Passive)
+
+
+【幻身诀】
+技能: Mystic Ally
+用途: Buff
+计时器: 1 000.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+
+
+【飓风破】
+技能: Cyclone Strike
+用途: Attack Density
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: true
+走动: false
+忽略位置计算: true
+用来打碎物品: false
+能量: Primary
+能量数值按照百分比计算: 0
+最低能量水平: 45.00
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+攻击距离: 30y
+最小距离: 0
+最大距离: 50
+计算最小参数: 0
+计算最大参数: 20
+攻击限制: 10
+精英权重: 50
+爪牙权重: 1
+看守者，红门首领，秘境守护者或者boss权重: 100
+哥布林权重: 50
+普通怪权重: 1
+
+
+【风雷冲】
+技能: Tempest Rush
+用途: Attack Elite
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: true
+走动: false
+忽略位置计算: true
+用来打碎物品: false
+能量: Primary
+能量数值按照百分比计算: 0
+最低能量水平: 30.00
+最小生命值: 0% of health
+引导: 1
+最低能量(引导时): 30.00
+最大距离(引导时): 0yards
+条件施法: false
+攻击距离: 15y
+
+
+【百裂拳(精英)】
+技能: Way Of The Hundred Fists
+用途: Attack Density
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: true
+走动: false
+忽略位置计算: true
+用来打碎物品: true
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+攻击距离: 10y
+最小距离: 0
+最大距离: 50
+计算最小参数: 0
+计算最大参数: 10
+攻击限制: 1
+精英权重: 50
+爪牙权重: 0
+看守者，红门首领，秘境守护者或者boss权重: 100
+哥布林权重: 50
+普通怪权重: 0
+
+
+【回天息】
+技能: Breath Of Heaven
+用途: Movement
+计时器: 2 000.00ms
+快速模式下不使用: false
+强制站立: true
+走动: false
+强制重新施法: false
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+最小距离: 0yards
+最大距离: 500yards
+
+
+【疾风击(低效)】
+技能: Dashing Strike
+用途: Movement
+计时器: 215.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+能量: Primary
+能量数值按照百分比计算: 0
+最低能量水平: 70.00
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+最小距离: 10yards
+最大距离: 29yards
+
+
+【疾风击(持续移动)】
+技能: Dashing Strike
+用途: Movement
+计时器: 110.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+能量: Primary
+能量数值按照百分比计算: 0
+最低能量水平: 70.00
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: IsBuffActive(1,X1_Monk_Passive_Momentum)
+最小距离: 30yards
+最大距离: 500yards
+
+
+【疾风击(接近)】
+技能: Dashing Strike
+用途: Movement
+计时器: 200.00ms
+快速模式下不使用: false
+强制站立: true
+走动: false
+强制重新施法: true
+用来打碎物品: false
+能量: Primary
+能量数值按照百分比计算: 0
+最低能量水平: 70.00
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+最小距离: 10yards
+最大距离: 60yards
+
+
+【疾风击(城镇)】
+技能: Dashing Strike
+用途: Movement
+计时器: 750.00ms
+快速模式下不使用: false
+强制站立: true
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+最小距离: 20yards
+最大距离: 150yards
