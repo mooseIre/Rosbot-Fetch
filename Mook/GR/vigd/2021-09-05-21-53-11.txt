@@ -1,0 +1,625 @@
+
+ 「vigd / rapi / cool_91」Innas Monk - Fire Ally (Conditional)
+
+
+「常规设置」
+
+全局怪物距离扫描: 150y
+最低生命百分比: 40%
+躲避怪物(弃用): false
+躲避危险词缀(弃用): false
+继续探索: true
+
+
+
+「行为」
+
+
+【[C] Cyclone - RG】
+技能: Cyclone Strike
+用途: Density Buff
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (Primary() > 50 & BuffTimeLeft(2, ItemPassive_Unique_Ring_735_x1) <4000)
+最小距离: 0
+最大距离: 30
+计算最小参数: 0
+计算最大参数: 30
+攻击限制: 1
+精英权重: 0
+爪牙权重: 0
+看守者，红门首领，秘境守护者或者boss权重: 2
+哥布林权重: 0
+普通怪权重: 0
+
+
+【[C] Cyclone - Elites】
+技能: Cyclone Strike
+用途: Density Buff
+计时器: 500.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (Primary() > 50 & BuffTimeLeft(2, ItemPassive_Unique_Ring_735_x1) <4650)
+最小距离: 0
+最大距离: 15
+计算最小参数: 0
+计算最大参数: 15
+攻击限制: 6
+精英权重: 7
+爪牙权重: 7
+看守者，红门首领，秘境守护者或者boss权重: 0
+哥布林权重: 0
+普通怪权重: 1
+
+
+【[C] Cyclone - Trash】
+技能: Cyclone Strike
+用途: Density Buff
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (BuffTimeLeft(2, ItemPassive_Unique_Ring_735_x1) <4000 & !IsBuffActive(0, Pages_Buff_Infinite_Casting) & !IsBuffActive(1, ItemPassive_Unique_Ring_919_x1) & Primary() > 150) | (IsBuffActive(1, ItemPassive_Unique_Ring_919_x1) & BuffTimeLeft(2, ItemPassive_Unique_Ring_735_x1) <4750 & Primary() > 200 & !IsBuffActive(0, Pages_Buff_Infinite_Casting)) | (IsBuffActive(0, Pages_Buff_Infinite_Casting) & IsBuffActive(1, X1_Monk_Passive_Momentum))
+最小距离: 4
+最大距离: 34
+计算最小参数: 4
+计算最大参数: 34
+攻击限制: 5
+精英权重: -100
+爪牙权重: -10
+看守者，红门首领，秘境守护者或者boss权重: -100
+哥布林权重: 0
+普通怪权重: 1
+
+
+【[C] Fire Ally - RG】
+技能: Mystic Ally
+用途: Density Buff
+计时器: 1 500.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: false
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (BuffTimeLeft(1, ItemPassive_Unique_Ring_735_x1) >4000 & BuffTimeLeft(2, ItemPassive_Unique_Ring_735_x1) >4000 & BuffStackCount(1, Monk_WayOfTheHundredFists) ==3) | (IsBuffActive(1, Pages_Buff_Run_Speed) & IsBuffActive(1, ItemPassive_Unique_Ring_735_x1) & IsBuffActive(2, ItemPassive_Unique_Ring_735_x1) & BuffStackCount(1, Monk_WayOfTheHundredFists) >1) | (IsBuffActive(0, Pages_Buff_Damage) & IsBuffActive(2, ItemPassive_Unique_Ring_735_x1)) | (IsBuffActive(0, Pages_Buff_Infinite_Casting) & IsBuffActive(1, X1_Monk_Passive_Momentum) & IsBuffActive(2, ItemPassive_Unique_Ring_735_x1))
+最小距离: 0
+最大距离: 18
+计算最小参数: 0
+计算最大参数: 18
+攻击限制: 1
+精英权重: 0
+爪牙权重: 0
+看守者，红门首领，秘境守护者或者boss权重: 2
+哥布林权重: 0
+普通怪权重: 0
+
+
+【[C] Fire Ally - Elites】
+技能: Mystic Ally
+用途: Density Buff
+计时器: 1 250.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: false
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (IsBuffActive(1, ItemPassive_Unique_Ring_735_x1) & IsBuffActive(2, ItemPassive_Unique_Ring_735_x1) & IsBuffActive(1, ItemPassive_Unique_Ring_919_x1) & IsBuffActive(1, X1_Monk_Passive_Momentum) & IsBuffActive(1, Monk_WayOfTheHundredFists) & !IsBuffActive(0, Pages_Buff_Infinite_Casting))
+最小距离: 0
+最大距离: 8
+计算最小参数: 0
+计算最大参数: 8
+攻击限制: 5
+精英权重: 2
+爪牙权重: 1
+看守者，红门首领，秘境守护者或者boss权重: -100
+哥布林权重: 0
+普通怪权重: -100
+
+
+【[C] Fire Ally - Density】
+技能: Mystic Ally
+用途: Density Buff
+计时器: 2 000.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: false
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (BuffTimeLeft(1, ItemPassive_Unique_Ring_735_x1) >1500 & BuffTimeLeft(2, ItemPassive_Unique_Ring_735_x1) >4000)
+最小距离: 0
+最大距离: 15
+计算最小参数: 0
+计算最大参数: 15
+攻击限制: 5
+精英权重: 6
+爪牙权重: 6
+看守者，红门首领，秘境守护者或者boss权重: -100
+哥布林权重: 0
+普通怪权重: 1
+
+
+【[C] Fire Ally - Trash】
+技能: Mystic Ally
+用途: Density Buff
+计时器: 2 500.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: false
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (BuffTimeLeft(2, ItemPassive_Unique_Ring_735_x1) >3750)
+最小距离: 0
+最大距离: 15
+计算最小参数: 0
+计算最大参数: 15
+攻击限制: 5
+精英权重: -100
+爪牙权重: -10
+看守者，红门首领，秘境守护者或者boss权重: -100
+哥布林权重: 0
+普通怪权重: 1
+
+
+【[C] Dash - Fight Help】
+技能: Dashing Strike
+用途: Attack Elite
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+忽略位置计算: false
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (BuffTimeLeft(4, X1_Monk_DashingStrike) < 100)
+攻击距离: 10y
+
+
+【[C] Cyclone - Restraint】
+技能: Cyclone Strike
+用途: Attack Density
+计时器: 2 000.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+忽略位置计算: false
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (IsBuffActive(1, X1_Monk_Epiphany) & BuffTimeLeft(2, ItemPassive_Unique_Ring_735_x1) <2250)
+攻击距离: 51y
+最小距离: 0
+最大距离: 40
+计算最小参数: 0
+计算最大参数: 10
+攻击限制: 1
+精英权重: 2
+爪牙权重: 2
+看守者，红门首领，秘境守护者或者boss权重: 2
+哥布林权重: 0
+普通怪权重: 1
+
+
+【WOTHF - RG】
+技能: Way Of The Hundred Fists
+用途: Attack Density
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: true
+走动: false
+忽略位置计算: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+攻击距离: 45y
+最小距离: 0
+最大距离: 50
+计算最小参数: 0
+计算最大参数: 20
+攻击限制: 1
+精英权重: 0
+爪牙权重: 0
+看守者，红门首领，秘境守护者或者boss权重: 2
+哥布林权重: 0
+普通怪权重: 0
+
+
+【WOTHF - Elites】
+技能: Way Of The Hundred Fists
+用途: Attack Elite Density
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: true
+走动: false
+忽略位置计算: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+攻击距离: 8y
+最小距离: 0
+最大距离: 50
+计算最小参数: 0
+计算最大参数: 15
+攻击限制: 1
+精英权重: 2
+爪牙权重: 2
+看守者，红门首领，秘境守护者或者boss权重: 0
+哥布林权重: 0
+普通怪权重: 0
+
+
+【[C] WOTHF - Minions】
+技能: Way Of The Hundred Fists
+用途: Attack Density
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: true
+走动: false
+忽略位置计算: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (IsBuffActive(0, ItemPassive_Unique_Gem_001_x1) & !IsBuffActive(1, ItemPassive_Unique_Gem_001_x1)) | (BuffTimeLeft(1, ItemPassive_Unique_Ring_919_x1) <5000 & BuffTimeLeft(0, Pages_Buff_Infinite_Casting) <2000)
+攻击距离: 8y
+最小距离: 0
+最大距离: 40
+计算最小参数: 0
+计算最大参数: 15
+攻击限制: 1
+精英权重: 0
+爪牙权重: 2
+看守者，红门首领，秘境守护者或者boss权重: 0
+哥布林权重: 0
+普通怪权重: 0
+
+
+【[C] WOTHF - Trash】
+技能: Way Of The Hundred Fists
+用途: Attack Density
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: true
+走动: false
+忽略位置计算: true
+用来打碎物品: true
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (BuffTimeLeft(1, ItemPassive_Unique_Ring_735_x1) <3000) |(BuffTimeLeft(1, Monk_WayOfTheHundredFists) < 1000 & IsBuffActive(1, ItemPassive_Unique_Ring_919_x1))
+攻击距离: 8y
+最小距离: 0
+最大距离: 40
+计算最小参数: 0
+计算最大参数: 15
+攻击限制: 5
+精英权重: 0
+爪牙权重: 0
+看守者，红门首领，秘境守护者或者boss权重: 0
+哥布林权重: 0
+普通怪权重: 1
+
+
+【[C] WOTHF - Channelling】
+技能: Way Of The Hundred Fists
+用途: Attack Density
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: true
+走动: false
+忽略位置计算: false
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (IsBuffActive(0, Pages_Buff_Infinite_Casting) & !IsBuffActive(0, Pages_Buff_Damage))
+攻击距离: 15y
+最小距离: 0
+最大距离: 45
+计算最小参数: 0
+计算最大参数: 10
+攻击限制: 8
+精英权重: 0
+爪牙权重: 0
+看守者，红门首领，秘境守护者或者boss权重: 0
+哥布林权重: 0
+普通怪权重: 1
+
+
+【[C] Dash - Channelling】
+技能: Dashing Strike
+用途: Movement
+计时器: 125.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (IsBuffActive(1, ItemPassive_Unique_Ring_919_x1) & IsBuffActive(0, Pages_Buff_Infinite_Casting) & IsBuffActive(1, X1_Monk_Passive_Momentum)) & (BuffTimeLeft(1, ItemPassive_Unique_Ring_919_x1) <14250)
+最小距离: 17yards
+最大距离: 500yards
+
+
+【[C] Dash - Long】
+技能: Dashing Strike
+用途: Movement
+计时器: 120.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (IsBuffActive(1, ItemPassive_Unique_Ring_919_x1) & BuffTimeLeft(1, ItemPassive_Unique_Ring_919_x1) <14000 & !IsBuffActive(0, Pages_Buff_Infinite_Casting) & IsBuffActive(1, X1_Monk_Passive_Momentum))
+最小距离: 25yards
+最大距离: 500yards
+
+
+【[C] Dash - Medium】
+技能: Dashing Strike
+用途: Movement
+计时器: 400.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (BuffTimeLeft(1, ItemPassive_Unique_Ring_919_x1) <14000 & !IsBuffActive(0, Pages_Buff_Infinite_Casting) & IsBuffActive(1, X1_Monk_Passive_Momentum))
+最小距离: 16yards
+最大距离: 24yards
+
+
+【[C] Dash - Long (no IG)】
+技能: Dashing Strike
+用途: Movement
+计时器: 500.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (IsBuffActive(1, X1_Monk_Passive_Momentum) & !IsBuffActive(0, Pages_Buff_Infinite_Casting) & !IsBuffActive(1, ItemPassive_Unique_Ring_919_x1))
+最小距离: 30yards
+最大距离: 500yards
+
+
+【[C] Dash - Approach】
+技能: Dashing Strike
+用途: Movement
+计时器: 350.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件:  (BuffTimeLeft(1, ItemPassive_Unique_Ring_919_x1) <14250)
+最小距离: 0yards
+最大距离: 200yards
+
+
+【[C] WOTHF - Approach】
+技能: Way Of The Hundred Fists
+用途: Movement
+计时器: 250.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (ChargeCount(X1_Monk_DashingStrike) ==0 & IsBuffActive(1, X1_Monk_Epiphany)) | (!IsBuffActive(1, Monk_WayOfTheHundredFists) & IsBuffActive(1, ItemPassive_Unique_Ring_919_x1) & IsBuffActive(1, X1_Monk_Epiphany))
+最小距离: 0yards
+最大距离: 40yards
+
+
+【[C] Epiphany - Buff】
+技能: Epiphany
+用途: Density Buff
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (!IsBuffActive(1, X1_Monk_Epiphany)) | (IsBuffActive(1, X1_Monk_Epiphany) & BuffTimeLeft(1, X1_Monk_Epiphany) < 250)
+最小距离: 0
+最大距离: 70
+计算最小参数: 0
+计算最大参数: 70
+攻击限制: 5
+精英权重: 6
+爪牙权重: 6
+看守者，红门首领，秘境守护者或者boss权重: 6
+哥布林权重: 6
+普通怪权重: 1
+
+
+【[C] Serenity - Buff】
+技能: Serenity
+用途: Density Buff
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: false
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (!IsBuffActive(0, Pages_Buff_Invulnerable) & IsBuffActive(1, ItemPassive_Unique_Ring_919_x1)) | (!IsBuffActive(1, ItemPassive_Unique_Ring_919_x1)) | (BuffTimeLeft(0, Pages_Buff_Invulnerable) <500)
+最小距离: 0
+最大距离: 40
+计算最小参数: 0
+计算最大参数: 40
+攻击限制: 5
+精英权重: 6
+爪牙权重: 6
+看守者，红门首领，秘境守护者或者boss权重: 6
+哥布林权重: 0
+普通怪权重: 1
+
+
+【[C] Serenity - Stuck】
+技能: Serenity
+用途: Density Buff
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: false
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (!IsBuffActive(5, P66_ItemPassive_Unique_Ring_931) & Rune(Monk_Serenity) == 1 & !IsBuffActive(1, Pages_Buff_Run_Speed)) | (IsBuffActive(5, P66_ItemPassive_Unique_Ring_931) & !IsBuffActive(1, P66_ItemPassive_Unique_Ring_927)) | (IsBuffActive(0, Pages_Buff_Invulnerable) & BuffTimeLeft(1, P66_ItemPassive_Unique_Ring_927) < 2500 & IsBuffActive(1, X1_Monk_Passive_Momentum))
+最小距离: 0
+最大距离: 10
+计算最小参数: 0
+计算最大参数: 10
+攻击限制: 1
+精英权重: 0
+爪牙权重: 2
+看守者，红门首领，秘境守护者或者boss权重: 0
+哥布林权重: 0
+普通怪权重: 2
+
+
+【[C] Dash - Stuck | no IG】
+技能: Dashing Strike
+用途: Movement
+计时器: 1 500.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: false
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: (BuffTimeLeft(1, ItemPassive_Unique_Ring_919_x1) <14000 & ChargeCount(X1_Monk_DashingStrike) ==2) | (BuffTimeLeft(4, X1_Monk_DashingStrike) < 3500 & ChargeCount(X1_Monk_DashingStrike) <= 1)
+最小距离: 0yards
+最大距离: 500yards
+
+
+【[C] Mantra of Conviction - Buff】
+技能: Mantra Of Conviction
+用途: Density Buff
+计时器: 2 990.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: !IsBuffActive(2, X1_Monk_MantraOfConviction_v2_Passive) | BuffTimeLeft(2, X1_Monk_MantraOfConviction_v2_Passive) < 100 & Primary() > 50%
+最小距离: 0
+最大距离: 60
+计算最小参数: 0
+计算最大参数: 60
+攻击限制: 3
+精英权重: 4
+爪牙权重: 4
+看守者，红门首领，秘境守护者或者boss权重: 4
+哥布林权重: 4
+普通怪权重: 1
+
+
+【[C] Blinding Flash - Buff】
+技能: Blinding Flash
+用途: Buff
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: !IsBuffActive(1, Monk_BlindingFlash) | BuffTimeLeft(1, Monk_BlindingFlash) < 250 | Health() < 90%
+
+
+【[C] Breath Of Heaven - Buff】
+技能: Breath Of Heaven
+用途: Buff
+计时器: 50.00ms
+快速模式下不使用: false
+强制站立: true
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: true
+动作条件: !IsBuffActive(2, Monk_BreathOfHeaven) & Rune(Monk_BreathOfHeaven) == 4 | Rune(Monk_BreathOfHeaven) == 4 & BuffTimeLeft(2, Monk_BreathOfHeaven) < 100 | !IsBuffActive(2, Monk_BreathOfHeaven) & Rune(Monk_BreathOfHeaven) == 2 | Rune(Monk_BreathOfHeaven) == 2 & BuffTimeLeft(2, Monk_BreathOfHeaven) < 250
+
+
+【Dash - Town】
+技能: Dashing Strike
+用途: Movement
+计时器: 200.00ms
+快速模式下不使用: false
+强制站立: false
+走动: false
+强制重新施法: true
+用来打碎物品: false
+最小生命值: 0% of health
+引导: 0
+条件施法: false
+最小距离: 14yards
+最大距离: 100yards
